@@ -1,0 +1,8 @@
+os.chdir('E:\CODES\Machine_Learning\Andrew\Project3\spam_2')
+for f in os.listdir():
+	fn,fx = os.path.splitext(f)
+	with open(f) as rf:
+		os.chdir('E:\CODES\Machine_Learning\Andrew\Project3\spam2txt')
+		with open('h'+fn+'.txt','w') as wf:
+			wf.write(rf.read())
+		os.chdir('E:\CODES\Machine_Learning\Andrew\Project3\spam_2')
